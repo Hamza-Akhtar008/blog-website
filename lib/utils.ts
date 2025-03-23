@@ -40,7 +40,7 @@ export function generateJsonLd(post: any) {
     },
     publisher: {
       "@type": "Organization",
-      name: "TrendyBlog",
+      name: "Top Trending Blogs",
       logo: {
         "@type": "ImageObject",
         url: "https://trendyblog.example.com/logo.png",
