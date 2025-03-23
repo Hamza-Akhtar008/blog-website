@@ -13,7 +13,7 @@ const GA_TRACKING_ID = "G-2KE2SMM6T3"; // Replace with your actual GA4 tracking 
 
 export const metadata: Metadata = {
   title: {
-    default: "TrendyBlog - Stay Updated with the Latest Trends",
+    default: "Top Trending Blogs - Stay Updated with the Latest Trends",
     template: "%s | TrendyBlog",
   },
   description:
