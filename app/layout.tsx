@@ -30,6 +30,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
+  
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -78,6 +79,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Google Analytics Script */}
+        <meta name="google-adsense-account" content="ca-pub-6135540357167893"></meta>
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
@@ -91,9 +93,7 @@ export default function RootLayout({
               page_path: window.location.pathname,
             });
           `}
-        </Script>
-        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6135540357167893"
-     crossorigin="anonymous"></Script>
+        
       </head>
       <body className={`${inter.className} min-h-screen flex flex-col bg-background text-foreground`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
