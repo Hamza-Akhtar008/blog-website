@@ -92,6 +92,8 @@ export default function RootLayout({
             });
           `}
         </Script>
+        <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6135540357167893"
+     crossorigin="anonymous"></Script>
       </head>
       <body className={`${inter.className} min-h-screen flex flex-col bg-background text-foreground`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
