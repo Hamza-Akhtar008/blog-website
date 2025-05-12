@@ -68,7 +68,11 @@ export const metadata: Metadata = {
     },
   },
   generator: "v0.dev",
+  
+  // Add Google AdSense meta tag
+  googleAdsenseAccount: "ca-pub-6135540357167893",  // This field is custom for adding Google AdSense account ID
 };
+
 
 export default function RootLayout({
   children,
@@ -79,7 +83,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         {/* Google Analytics Script */}
-        <meta name="google-adsense-account" content="ca-pub-6135540357167893"></meta>
+        
         <Script
           strategy="afterInteractive"
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
@@ -93,7 +97,8 @@ export default function RootLayout({
               page_path: window.location.pathname,
             });
           `}
-        
+        </Script>
+      
       </head>
       <body className={`${inter.className} min-h-screen flex flex-col bg-background text-foreground`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
